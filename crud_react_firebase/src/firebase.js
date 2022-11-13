@@ -1,15 +1,17 @@
-import firebase from firebase/app;
-import "firebase/database";
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAuth} from 'firebase/auth';
 
 const firebaseConfig = {
-    apiKey: "AIzaSyDAbCXTHC9W16LVPnPrmCTOpOycdII_n6Y",
-    authDomain: "reactcrud-aa51c.firebaseapp.com",
-    projectId: "reactcrud-aa51c",
-    storageBucket: "reactcrud-aa51c.appspot.com",
-    messagingSenderId: "64354565253",
-    appId: "1:64354565253:web:7b011317e4d58a4859fdec",
-    measurementId: "G-G0BGSZ1ZRK"
-  };
+  apiKey: "AIzaSyAVPmvkN4hYbB64p-mu3ntw5asugW3UQok",
+  authDomain: "reactcrud-51e72.firebaseapp.com",
+  projectId: "reactcrud-51e72",
+  storageBucket: "reactcrud-51e72.appspot.com",
+  messagingSenderId: "224667098607",
+  appId: "1:224667098607:web:91bbc8ba48fe8598c6aa1a",
+  measurementId: "G-P36JH15X0G"
+};
 
-  const fireDB=firebase.initializeApp(firebaseConfig);
-  export default fireDB.database().ref();
+const app = initializeApp(firebaseConfig);
+export const auth = getAuth(app);
+

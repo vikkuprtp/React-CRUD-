@@ -3,11 +3,9 @@ import React from 'react'
 const Home = () => {
   return (
     <div>
-      <Navbar>
-        <ul></ul>
+        <ul>
         <li>Home</li>
-        
-      </Navbar>
+        </ul>
     </div>
   )
 }

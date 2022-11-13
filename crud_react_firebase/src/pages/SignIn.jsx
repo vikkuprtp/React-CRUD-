@@ -6,7 +6,14 @@ const SignIn = () => {
 
   const {googleSignIn}=UserAuth();
 
-  const handlegoogleSignIn=
+  const handlegoogleSignIn=async ()=>{
+    try{
+      await googleSignIn
+    }catch(error){
+      console.log(error)
+    }
+
+  }
   return (
     <div>
       <GoogleButton></GoogleButton>
